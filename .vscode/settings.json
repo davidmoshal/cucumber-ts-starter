@@ -51,6 +51,12 @@
     "typescript.tsdk": "node_modules/typescript/lib",
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
-    }
+    },
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#4E1747",
+        "titleBar.activeBackground": "#6D2163",
+        "titleBar.activeForeground": "#FDF8FC"
+    },
+    "window.title": "${activeEditorLong}${separator}${rootName} ${separator} [Branch: master]"
     
 }
