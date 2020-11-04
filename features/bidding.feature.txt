@@ -1,0 +1,15 @@
+@ignore
+Feature: Simple bidding scenario
+
+  @ignore
+  Background: Auction setup
+    Given Basic BWP setup
+
+  @ignore
+  Scenario: dm one
+    Given first round bids:
+      | b1 | b2 | b3 |
+      | 1  | 2  | 3  |
+    Then the first round allocation should be:
+      | b1 | b2 | b3 |
+      | 1  | 2  | 3  |

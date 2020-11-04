@@ -1,6 +1,6 @@
 import { SimpleMathsCalculator } from '../../domains/simple-maths/simple-maths-calculator';
 import expect from 'expect';
-import { Before, Given, Then, When } from 'cucumber';
+import { Given, Then, When } from 'cucumber';
 
 Given('I have a simple maths calculator', async function () {
   this.calculator = new SimpleMathsCalculator();
@@ -16,11 +16,4 @@ When('I increment the variable by {int}', async function (value: number) {
 
 Then('the variable should contain {int}', async function (value: number) {
   expect(this.calculator.result).toBe(value);
-});
-
-/**
- * Before each scenario hook
- */
-Before({ tags: '@foo' }, async function () {
-  this.foo = true;
 });
